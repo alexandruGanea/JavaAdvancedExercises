@@ -1,4 +1,8 @@
-package PACKAGE_NAME;
+public class OddNumberException extends Exception {
+    public OddNumberException(String message) {
+        super(message);
+    }
 
-public class OddNumberException {
+
+
 }

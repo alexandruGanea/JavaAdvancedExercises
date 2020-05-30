@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
-public class VowelException {
+public class VowelException extends Exception {
+    public VowelException(String message) {
+        super(message);
+    }
 }
