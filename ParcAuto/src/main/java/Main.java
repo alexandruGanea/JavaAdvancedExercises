@@ -53,10 +53,10 @@ public class Main {
             String text = carsInitialBuffer.readLine();
             while (text != null) {
                 String[] textArray = text.split(",");
-                Car car = new Car(textArray[0], textArray[1], textArray[2], Integer.valueOf(textArray[3]), textArray[4], Integer.valueOf(textArray[5]));
+                Car car = new Car(textArray[0], textArray[1], textArray[2], Integer.parseInt(textArray[3]), textArray[4], Integer.parseInt(textArray[5]));
                 System.out.println("Rata lunara pentru " + car.getMake() + " " + car.getModel() + " este: " + car.payRate() + " euro.");
 
-                if (car.getSold() == true) {
+                if (car.getSold()) {
                     carsSoldBuffer.write(text);
                     carsSoldBuffer.newLine();
                     carsSoldBuffer.flush();

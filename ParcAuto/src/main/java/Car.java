@@ -60,11 +60,7 @@ public class Car implements Leasing {
     }
 
     public boolean getSold() {
-        if ((this.make.equals("Audi") || this.make.equals("BMW") || this.make.equals("Opel") || this.make.equals("VW")) && this.color.equals("negru") && this.fuelType.equals("benzina")) {
-            return true;
-        }else{
-            return false;
-        }
+        return (this.make.equals("Audi") || this.make.equals("BMW") || this.make.equals("Opel") || this.make.equals("VW")) && this.color.equals("negru") && this.fuelType.equals("benzina");
     }
 }
 

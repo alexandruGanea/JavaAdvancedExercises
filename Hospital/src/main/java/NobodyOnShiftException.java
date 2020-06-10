@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
+public class NobodyOnShiftException  extends Exception{
 
-public class NobodyOnShiftException {
+    public NobodyOnShiftException(String message){
+        super (message);
+    }
 }

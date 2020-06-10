@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
-public class TooCrowdedException {
+public class TooCrowdedException extends Exception{
+    public TooCrowdedException(String message){
+        super(message);
+    }
 }
